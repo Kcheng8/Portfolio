@@ -217,23 +217,28 @@ a { text-decoration: none; color: inherit; }
 .hero-deco--right { top: -100px; right: -80px;   background: radial-gradient(circle, var(--white), transparent 70%); }
 .hero-content { position: relative; z-index: 2; }
 .hero-greeting {
-  font-size: 1.1rem;
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.4rem;
+  font-weight: 400;
   letter-spacing: 4px;
   text-transform: uppercase;
   color: rgba(255,255,255,0.8);
   margin-bottom: 12px;
 }
 .hero-name {
+  font-family: 'DM Serif Display', serif;
   font-size: clamp(3rem, 8vw, 6rem);
-  font-weight: 900;
+  font-weight: 400;
   color: var(--white);
   line-height: 1.05;
   margin-bottom: 16px;
 }
 .hero-tagline {
-  font-size: 1.15rem;
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.2rem;
+  font-weight: 400;
   color: rgba(255,255,255,0.75);
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   margin-bottom: 36px;
   min-height: 1.5em;
 }
