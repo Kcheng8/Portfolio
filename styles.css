@@ -510,7 +510,7 @@ a { text-decoration: none; color: inherit; }
   border-color: var(--dusty-lavender);
   box-shadow: 0 0 0 3px rgba(128, 94, 115, 0.15);
 }
-.contact-form .btn { align-self: flex-start; }
+.contact-form .btn { align-self: center; }
 
 /* ================= FOOTER ================= */
 .footer {
