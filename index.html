@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="nav-logo">Kierren Cheng</a>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Kierren Cheng</h1>
+      <p class="hero-tagline"><span id="typing-text"></span><span class="typing-cursor">|</span></p>
+      <a href="#about" class="btn btn-primary">Learn More</a>
+    </div>
+    <!-- decorative botanical shapes -->
+    <div class="hero-deco hero-deco--left"></div>
+    <div class="hero-deco hero-deco--right"></div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="about" id="about">
+    <!-- decorative botanical bg -->
+    <div class="about-bg-deco"></div>
+
+    <div class="about-container">
+      <!-- Photo column -->
+      <div class="about-photo-wrapper scroll-reveal-left">
+        <div class="about-photo-border"></div>
+        <img
+          src="Images/Headshot.jpeg"
+          alt="Portrait photo"
+          class="about-photo"
+        />
+        <a href="#" class="btn btn-dark btn-cv">DOWNLOAD MY CV</a>
+      </div>
+
+      <!-- Text column -->
+      <div class="about-text scroll-reveal-right">
+        <p class="about-label">About Me</p>
+        <div class="hash-separator">////////////////////</div>
+        <h2 class="about-name">Kierren Cheng</h2>
+        <p class="about-title"><em>Professional Events Officer | Fifth-Year Engineering & Science Student</em></p>
+        <div class="hash-separator">////////////////////</div>
+
+        <p class="about-bold">
+          I am the Professional Events Officer and a fifth-year Engineering and Science student specialising in Chemical Engineering, with majors in Bioprocess Engineering and Microbiology. My interests lie in bioprocessing and translational science, particularly the application of molecular virology to vaccine and diagnostic development.
+        </p>
+        <p>
+          Throughout my studies, I have gained hands-on experience in virology research at the Peters Lab, focusing on chimeric alphaviruses characterization and lateral flow assay development. This research has strengthened my understanding of molecular biology techniques and diagnostic device design.
+        </p>
+        <p>
+          As the Professional Events Officer with the UQ Biotechnology Society, I have organized and supported major events including career panels, research and career nights strengthening my skills in event planning, stakeholder engagement, and industry networking.
+        </p>
+        <p>
+          My experience extends to customer service as a team member in the Deli Department at Coles Supermarkets, where I've developed strong multitasking abilities and adaptability in fast-paced environments, especially throughout the pandemic, while maintaining exceptional health and safety standards.
+        </p>
+        <p>
+          In my spare time, I enjoy exploring web development and design, expanding my technical skillset beyond the laboratory.
+        </p>
+
+      </div>
+    </div>
+
+    <!-- decorative bottom stripe -->
+    <div class="about-bottom-stripe">//////////////////////////////</div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="skills" id="skills">
+    <p class="section-label scroll-reveal">WHAT I DO</p>
+    <div class="hash-separator hash-separator--center scroll-reveal">////////////////////</div>
+    <h2 class="section-heading scroll-reveal">SKILLS &amp; EXPERTISE</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card scroll-reveal-scale">
+        <div class="skill-icon">&#128300;</div>
+        <h3>Microbiology</h3>
+        <p>Virology research, chimeric alphaviruses characterization, lateral flow assay development, and molecular biology techniques.</p>
+      </div>
+      <div class="skill-card scroll-reveal-scale">
+        <div class="skill-icon">&#128101;</div>
+        <h3>Leadership &amp; Events</h3>
+        <p>Event planning, stakeholder engagement, industry networking, organizing career panels and research nights.</p>
+      </div>
+      <div class="skill-card scroll-reveal-scale">
+        <div class="skill-icon">&#127891;</div>
+        <h3>Engineering</h3>
+        <p>Chemical engineering with specialization in bioprocess engineering, and technical problem-solving.</p>
+      </div>
+      <div class="skill-card scroll-reveal-scale">
+        <div class="skill-icon">&#9889;</div>
+        <h3>Team Management</h3>
+        <p>Fast-paced retail environment, customer service excellence, multitasking, inventory management, and team collaboration.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section class="projects" id="projects">
+    <p class="section-label scroll-reveal">MY EXPERIENCE</p>
+    <div class="hash-separator hash-separator--center scroll-reveal">////////////////////</div>
+    <h2 class="section-heading scroll-reveal">PROFESSIONAL EXPERIENCE</h2>
+
+    <div class="projects-grid">
+      <article class="project-card scroll-reveal-scale">
+        <div class="project-img" style="background-image:url('https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=600&q=80')"></div>
+        <div class="project-body">
+          <h3>Virology Research</h3>
+          <p>Conducted research on chimeric alphaviruses characterization, investigating viral properties and behavior. Contributed to lateral flow assay development for rapid diagnostic applications, combining molecular biology techniques with practical device design.</p>
+          <div class="project-tags"><span>Virology</span><span>Alphaviruses</span><span>Diagnostics</span><span>Assay Development</span></div>
+        </div>
+      </article>
+      <article class="project-card scroll-reveal-scale">
+        <div class="project-img" style="background-image:url('https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=600&q=80')"></div>
+        <div class="project-body">
+          <h3>Professional Events Officer</h3>
+          <p>UQ Biotechnology Society (2025 – Present). Engaged with industry representatives and academics, building relationships which create opportunities for members to explore diverse careers and research pathways within biotechnology. Organized career panels, industry nights, and lab tours.</p>
+          <div class="project-tags"><span>Event Planning</span><span>Networking</span><span>Leadership</span></div>
+        </div>
+      </article>
+      <article class="project-card scroll-reveal-scale">
+        <div class="project-img" style="background-image:url('https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=600&q=80')"></div>
+        <div class="project-body">
+          <h3>Deli Team Member</h3>
+          <p>Coles Supermarkets (2021 – Present). Collaborated with a team environment to achieve daily operational goals, contributing to a clean and organized workspace. Demonstrated flexibility and adaptability in a fast-paced environment, managing multiple tasks and meeting customer needs promptly.</p>
+          <div class="project-tags"><span>Customer Service</span><span>Team Management</span><span>Operations</span></div>
+        </div>
+      </article>
+      <article class="project-card scroll-reveal-scale">
+        <div class="project-img" style="background-image:url('https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=600&q=80')"></div>
+        <div class="project-body">
+          <h3>Student Ambassador</h3>
+          <p>Selected as one of the student ambassadors for the Ausbiotech International Conference out of 100+ applicants across Australia. Represented the biotechnology student community at Australia's premier industry event.</p>
+          <div class="project-tags"><span>Biotechnology Conference</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact" id="contact">
+    <p class="section-label scroll-reveal">GET IN TOUCH</p>
+    <div class="hash-separator hash-separator--center scroll-reveal">////////////////////</div>
+    <h2 class="section-heading scroll-reveal">CONTACT ME</h2>
+
+    <form class="contact-form scroll-reveal" onsubmit="event.preventDefault(); alert('Message sent!');">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="hash-separator hash-separator--gold">////////////////////</div>
+    <p>&copy; 2026 Kierren Cheng. All rights reserved.</p>
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/kierren-cheng-7ba5841b2/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="#">Email</a>
+    </div>
+  </footer>
+
+  <script>
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Scroll reveal animation
+    function revealOnScroll() {
+      const reveals = document.querySelectorAll('.scroll-reveal, .scroll-reveal-left, .scroll-reveal-right, .scroll-reveal-scale');
+      
+      reveals.forEach(element => {
+        const windowHeight = window.innerHeight;
+        const elementTop = element.getBoundingClientRect().top;
+        const elementVisible = 150; // Trigger point in pixels from bottom of viewport
+        
+        if (elementTop < windowHeight - elementVisible) {
+          element.classList.add('visible');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll); // Check on page load too
+
+    // Typing animation
+    const texts = [
+      'Chemical & Bioprocess Engineering',
+      'Microbiology',
+      'Translational Science',
+      'Virology Research',
+    ];
+    let textIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typingSpeed = 100;
+
+    function type() {
+      const currentText = texts[textIndex];
+      const typingElement = document.getElementById('typing-text');
+      
+      if (isDeleting) {
+        typingElement.textContent = currentText.substring(0, charIndex - 1);
+        charIndex--;
+        typingSpeed = 50;
+      } else {
+        typingElement.textContent = currentText.substring(0, charIndex + 1);
+        charIndex++;
+        typingSpeed = 100;
+      }
+
+      if (!isDeleting && charIndex === currentText.length) {
+        // Pause at end
+        typingSpeed = 2000;
+        isDeleting = true;
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        textIndex = (textIndex + 1) % texts.length;
+        typingSpeed = 500;
+      }
+
+      setTimeout(type, typingSpeed);
+    }
+
+    // Start typing animation when page loads
+    window.addEventListener('load', () => {
+      setTimeout(type, 1000);
+    });
+  </script>
+</body>
+</html>
