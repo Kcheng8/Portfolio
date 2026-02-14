@@ -476,6 +476,12 @@ a { text-decoration: none; color: inherit; }
   letter-spacing: 0.5px;
 }
 
+/* ================= WEB DEVELOPMENT PROJECTS ================= */
+.webprojects {
+  padding: 100px 48px;
+  background: var(--off-white);
+}
+
 /* ================= CONTACT ================= */
 .contact {
   padding: 100px 48px;
@@ -539,7 +545,7 @@ a { text-decoration: none; color: inherit; }
   .nav-links.open { display: flex; }
   .nav-toggle { display: flex; }
   .hero-name { font-size: clamp(2.4rem, 10vw, 4rem); }
-  .about, .skills, .projects, .contact { padding: 72px 24px; }
+  .about, .skills, .projects, .webprojects, .contact { padding: 72px 24px; }
 }
 
 @media (max-width: 600px) {
