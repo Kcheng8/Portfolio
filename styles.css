@@ -490,6 +490,135 @@ a { text-decoration: none; color: inherit; }
   background: var(--off-white);
 }
 
+/* ================= ACADEMIC & RESEARCH PROJECTS ================= */
+.academic {
+  padding: 100px 48px;
+  background: var(--white);
+}
+
+.accordion-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.accordion-group {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  background: var(--white);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.accordion-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 22px 28px;
+  background: var(--white);
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: left;
+  transition: background var(--transition);
+  border-left: 4px solid var(--dusty-lavender);
+}
+.accordion-header:hover {
+  background: var(--off-white);
+}
+
+.accordion-icon {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+.accordion-title {
+  flex: 1;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--dark);
+  letter-spacing: 0.3px;
+}
+
+.accordion-chevron {
+  font-size: 0.7rem;
+  color: var(--dusty-lavender);
+  transition: transform 0.3s ease;
+}
+
+.accordion-group.open .accordion-chevron {
+  transform: rotate(180deg);
+}
+
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.45s ease, padding 0.3s ease;
+  padding: 0 28px;
+  border-left: 4px solid transparent;
+}
+
+.accordion-group.open .accordion-body {
+  max-height: 3000px;
+  padding: 8px 28px 28px;
+  border-left: 4px solid rgba(128, 94, 115, 0.2);
+}
+
+.accordion-project {
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+.accordion-project:last-child {
+  border-bottom: none;
+}
+
+.accordion-project h4 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--charcoal-blue);
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.accordion-project ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px 0;
+}
+
+.accordion-project ul li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 6px;
+  line-height: 1.6;
+}
+
+.accordion-project ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--dusty-lavender);
+}
+
+.accordion-project a {
+  color: var(--dusty-lavender);
+  font-weight: 600;
+  text-decoration: underline;
+  transition: var(--transition);
+}
+.accordion-project a:hover {
+  color: var(--charcoal);
+}
+
 /* ================= CONTACT ================= */
 .contact {
   padding: 100px 48px;
@@ -553,7 +682,7 @@ a { text-decoration: none; color: inherit; }
   .nav-links.open { display: flex; }
   .nav-toggle { display: flex; }
   .hero-name { font-size: clamp(2.4rem, 10vw, 4rem); }
-  .about, .skills, .projects, .webprojects, .contact { padding: 72px 24px; }
+  .about, .skills, .projects, .webprojects, .academic, .contact { padding: 72px 24px; }
 }
 
 @media (max-width: 600px) {
