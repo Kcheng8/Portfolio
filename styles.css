@@ -609,6 +609,26 @@ a { text-decoration: none; color: inherit; }
   background: var(--dusty-lavender);
 }
 
+.accordion-media {
+  margin: 8px 0 14px;
+}
+
+.accordion-media img {
+  width: 72%;
+  max-width: 520px;
+  display: block;
+  margin: 0 auto;
+  border-radius: var(--radius);
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+}
+
+.accordion-media figcaption {
+  margin-top: 8px;
+  font-size: 0.82rem;
+  color: #666;
+}
+
 .accordion-project a {
   color: var(--dusty-lavender);
   font-weight: 600;
@@ -688,6 +708,7 @@ a { text-decoration: none; color: inherit; }
 @media (max-width: 600px) {
   .projects-grid { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: 1fr 1fr; }
+  .accordion-media img { width: 100%; }
 }
 
 @media (max-width: 420px) {
