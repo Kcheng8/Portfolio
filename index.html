@@ -93,7 +93,6 @@
   <!-- ===================== SKILLS ===================== -->
   <section class="skills" id="skills">
     <p class="section-label scroll-reveal">WHAT I DO</p>
-    <div class="hash-separator hash-separator--center scroll-reveal">////////////////////</div>
     <h2 class="section-heading scroll-reveal">SKILLS &amp; EXPERTISE</h2>
 
     <div class="skills-grid">
@@ -123,7 +122,6 @@
   <!-- ===================== EXPERIENCE ===================== -->
   <section class="projects" id="experience">
     <p class="section-label scroll-reveal">MY EXPERIENCE</p>
-    <div class="hash-separator hash-separator--center scroll-reveal">////////////////////</div>
     <h2 class="section-heading scroll-reveal">PROFESSIONAL EXPERIENCE</h2>
 
     <div class="projects-grid">
@@ -157,7 +155,6 @@
   <!-- ===================== WEB DEVELOPMENT PROJECTS ===================== -->
   <section class="webprojects" id="projects">
     <p class="section-label scroll-reveal">MY WORK</p>
-    <div class="hash-separator hash-separator--center scroll-reveal">////////////////////</div>
     <h2 class="section-heading scroll-reveal">WEB DEVELOPMENT PROJECTS</h2>
 
     <div class="projects-grid">
@@ -185,10 +182,151 @@
   <!-- ===================== ACADEMIC & RESEARCH PROJECTS ===================== -->
   <section class="academic" id="academic">
     <p class="section-label scroll-reveal">COURSEWORK &amp; RESEARCH</p>
-    <div class="hash-separator hash-separator--center scroll-reveal">////////////////////</div>
     <h2 class="section-heading scroll-reveal">ACADEMIC &amp; RESEARCH PROJECTS</h2>
 
     <div class="accordion-wrapper">
+
+      <!-- ── CHEE3020 ── -->
+      <div class="accordion-group scroll-reveal-scale">
+        <button class="accordion-header" aria-expanded="false">
+          <span class="accordion-icon">&#127981;</span>
+          <span class="accordion-title">CHEE3020 – Process Systems Analysis</span>
+          <span class="accordion-chevron">&#9660;</span>
+        </button>
+        <div class="accordion-body">
+
+          <div class="accordion-project">
+            <h4>Bioethanol Production Plant Design</h4>
+            <ul>
+              <li>Developed a preliminary concept design for a first-generation sugarcane biorefinery in Ayr (Burdekin, Queensland) to maximize local feedstock access and logistics.</li>
+              <li>Set the design basis at 90 ML/year total output, split into 60 ML/year anhydrous ethanol and 30 ML/year hydrous ethanol for fuel and industrial markets.</li>
+              <li>Designed the process train from cane pre-treatment through fed-batch Melle-Boinot fermentation, yeast recycle, two-stage distillation, and molecular sieve dehydration.</li>
+              <li>Defined key process performance targets including about 12 wt% fermenter wine, 95 wt% ethanol after distillation, and about 99.65 wt% anhydrous ethanol product.</li>
+              <li>Completed mass balance, hazard screening, and preliminary economic/sustainability assessment identifying vinasse management and distillation energy demand as primary constraints.</li>
+            </ul>
+            <figure class="accordion-media">
+              <img src="Images/Bioethanol%20Block%20Flow%20diagram.PNG" alt="Bioethanol block flow diagram" loading="lazy" />
+              <figcaption>Figure: Block flow diagram for the CHEE3020 bioethanol production concept.</figcaption>
+            </figure>
+            <div class="project-tags"><span>Bioethanol</span><span>Fermentation</span><span>PFD</span><span>Sustainability</span></div>
+          </div>
+
+          <div class="accordion-project">
+            <h4>Acetic Anhydride Process Synthesis and Simulation</h4>
+            <ul>
+              <li>Applied the J.M. Douglas method to design a continuous 90 kt/year acetic anhydride plant via the acetone-ketene route.</li>
+              <li>Selected Texas City, USA as the plant location based on feedstock access, low natural gas costs, and industrial infrastructure.</li>
+              <li>Developed the process flowsheet and Aspen Plus model around a furnace cracking reactor, quench, ketene absorption, distillation, and recycle loops.</li>
+              <li>Validated the design with a 15% single-pass acetone conversion, 99.23% product purity, and 104.08 kt/year acetic anhydride output.</li>
+              <li>Integrated heat exchangers to reduce utility demand and completed an economic analysis showing CAPEX of about USD 7.8 million and OPEX of about USD 161 million.</li>
+            </ul>
+            <figure class="accordion-media">
+              <img src="Images/CHEE3020%20AA%20PFD.PNG" alt="CHEE3020 acetic anhydride process flow diagram" loading="lazy" />
+              <figcaption>Figure: Process flow diagram (PFD) for the CHEE3020 acetic anhydride synthesis pathway.</figcaption>
+            </figure>
+            <figure class="accordion-media">
+              <img src="Images/ASPEN.png" alt="Aspen model for acetic anhydride process" loading="lazy" />
+              <figcaption>Figure: Aspen Plus flowsheet used to simulate the acetic anhydride process.</figcaption>
+            </figure>
+            <figure class="accordion-media">
+              <img src="Images/Heat%20integration.PNG" alt="Heat integration for acetic anhydride process" loading="lazy" />
+              <figcaption>Figure: Heat integration network implemented to reduce utility demand in the Aspen model.</figcaption>
+            </figure>
+            <div class="project-tags"><span>Aspen Plus</span><span>Process Simulation</span><span>Heat Integration</span><span>Economics</span></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ── CHEE3007 ── -->
+      <div class="accordion-group scroll-reveal-scale">
+        <button class="accordion-header" aria-expanded="false">
+          <span class="accordion-icon">&#128200;</span>
+          <span class="accordion-title">CHEE3007 – Process Modelling and Control</span>
+          <span class="accordion-chevron">&#9660;</span>
+        </button>
+        <div class="accordion-body">
+
+          <div class="accordion-project">
+            <h4>Heat Exchanger PID Control System Design</h4>
+            <ul>
+              <li>Developed a dynamic model of a shell-and-tube heat exchanger based on mass and energy balances.</li>
+              <li>Conducted open-loop step testing and fitted a first-order plus dead-time (FOPDT) model to experimental data.</li>
+              <li>Estimated model parameters using least-squares optimization in Python.</li>
+              <li>Designed and tuned PID controllers using Internal Model Control (IMC) across aggressive, moderate, and conservative regimes.</li>
+              <li>Implemented anti-reset windup (ARW) and actuator constraints to prevent saturation.</li>
+              <li>Evaluated feedback, feedforward, and cascade control strategies to improve disturbance rejection and set-point tracking.</li>
+            </ul>
+            <figure class="accordion-media">
+              <img src="Images/Feedback%20controller%20regulatory%20step%20test.PNG" alt="Feedback controller regulatory step test plot" loading="lazy" />
+              <figcaption>Figure: Regulatory step-response test used to assess feedback controller disturbance rejection.</figcaption>
+            </figure>
+            <div class="project-tags"><span>PID Control</span><span>IMC</span><span>Python</span><span>FOPDT</span></div>
+          </div>
+
+          <div class="accordion-project">
+            <h4>Distillation Column Dynamic Model (Water-MEG)</h4>
+            <ul>
+              <li>Built a dynamic model of a 5-stage pilot distillation column (reboiler, three trays, and reflux drum) for separating water and mono-ethylene glycol.</li>
+              <li>Implemented constituent VLE functions in Python, including Antoine-based saturation pressure, equilibrium constants, relative volatility vapour composition, and isothermal flash calculations.</li>
+              <li>Derived and solved coupled component-balance ODEs with odeint for stage compositions under varying reflux ratio, temperature, and pressure.</li>
+              <li>Added numerical routines to determine the minimum reflux ratio for a target distillate composition and assess model stiffness via Jacobian eigenvalue scaling.</li>
+              <li>Generated transient composition profiles for distillate, trays, and base to evaluate separation performance and bottoms/distillate quality.</li>
+            </ul>
+            <figure class="accordion-media">
+              <img src="Images/CHEE3007_Distillation_Dynamic_Profiles.png" alt="CHEE3007 distillation column dynamic composition profiles" loading="lazy" />
+              <figcaption>Figure: Dynamic composition profiles across the reflux drum, trays, and reboiler.</figcaption>
+            </figure>
+            <div class="project-tags"><span>Dynamic Modelling</span><span>Distillation</span><span>VLE</span><span>Python</span></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ── CHEE3004 ── -->
+      <div class="accordion-group scroll-reveal-scale">
+        <button class="accordion-header" aria-expanded="false">
+          <span class="accordion-icon">&#9881;</span>
+          <span class="accordion-title">CHEE3004 – Unit Operations</span>
+          <span class="accordion-chevron">&#9660;</span>
+        </button>
+        <div class="accordion-body">
+
+          <div class="accordion-project">
+            <h4>Heat Transfer Equipment Design</h4>
+            <ul>
+              <li>Conducted shell and tube heat exchanger thermal design by selecting an appropriate cooling fluid and determining the flowrate of the fluid required to meet process objectives.</li>
+              <li>Conducted shell and tube heat exchanger rating design including determining the exchanger configuration, TEMA code, number of shell and tube passes, fluid placement, tube pitch and sizing, tube bundle and shell diameter and pressure drops across the exchanger.</li>
+              <li>Completed thermal design and control loop design of condenser.</li>
+              <li>Estimated the heat transfer area, temperature differences and outlet temperatures for the design of a multi-effect evaporator. As well as designed temperature and pressure control loops, ensuring the process runs within design constraints.</li>
+            </ul>
+            <div class="project-tags"><span>Heat Exchanger</span><span>TEMA</span><span>Thermal Design</span><span>Control Loops</span></div>
+          </div>
+
+          <div class="accordion-project">
+            <h4>Distillation Column Design</h4>
+            <ul>
+              <li>Completed a mass balance and McCabe-Thiele graphical analysis for the separation of methanol-water.</li>
+              <li>Determined the minimum reflux ratio and operating reflux ratio, number of theoretical stages required for separation and feed stage location.</li>
+              <li>Determined the number of real stages and trays required to estimate column height.</li>
+              <li>Estimated column diameter to avoid flooding.</li>
+            </ul>
+            <div class="project-tags"><span>Distillation</span><span>McCabe-Thiele</span><span>Mass Balance</span></div>
+          </div>
+
+          <div class="accordion-project">
+            <h4>Group Project – Equipment Design for Instant Coffee Powder Production</h4>
+            <ul>
+              <li>Performed a mass balance around the instant coffee powder processing circuit to determine the flows and compositions of key streams in the circuit.</li>
+              <li>Identified process hazards and risks to operating staff.</li>
+              <li>Conducted preliminary sizing and design of key pieces of equipment and estimated energy consumption.</li>
+              <li>Designed and drew process control schemes for each process.</li>
+            </ul>
+            <div class="project-tags"><span>Process Design</span><span>Mass Balance</span><span>Safety</span><span>Control Schemes</span></div>
+          </div>
+
+        </div>
+      </div>
 
       <!-- ── Peters Lab ── -->
       <div class="accordion-group scroll-reveal-scale">
@@ -271,127 +409,6 @@
         </div>
       </div>
 
-      <!-- ── CHEE3004 ── -->
-      <div class="accordion-group scroll-reveal-scale">
-        <button class="accordion-header" aria-expanded="false">
-          <span class="accordion-icon">&#9881;</span>
-          <span class="accordion-title">CHEE3004 – Unit Operations</span>
-          <span class="accordion-chevron">&#9660;</span>
-        </button>
-        <div class="accordion-body">
-
-          <div class="accordion-project">
-            <h4>Heat Transfer Equipment Design</h4>
-            <ul>
-              <li>Conducted shell and tube heat exchanger thermal design by selecting an appropriate cooling fluid and determining the flowrate of the fluid required to meet process objectives.</li>
-              <li>Conducted shell and tube heat exchanger rating design including determining the exchanger configuration, TEMA code, number of shell and tube passes, fluid placement, tube pitch and sizing, tube bundle and shell diameter and pressure drops across the exchanger.</li>
-              <li>Completed thermal design and control loop design of condenser.</li>
-              <li>Estimated the heat transfer area, temperature differences and outlet temperatures for the design of a multi-effect evaporator. As well as designed temperature and pressure control loops, ensuring the process runs within design constraints.</li>
-            </ul>
-            <div class="project-tags"><span>Heat Exchanger</span><span>TEMA</span><span>Thermal Design</span><span>Control Loops</span></div>
-          </div>
-
-          <div class="accordion-project">
-            <h4>Distillation Column Design</h4>
-            <ul>
-              <li>Completed a mass balance and McCabe-Thiele graphical analysis for the separation of methanol-water.</li>
-              <li>Determined the minimum reflux ratio and operating reflux ratio, number of theoretical stages required for separation and feed stage location.</li>
-              <li>Determined the number of real stages and trays required to estimate column height.</li>
-              <li>Estimated column diameter to avoid flooding.</li>
-            </ul>
-            <div class="project-tags"><span>Distillation</span><span>McCabe-Thiele</span><span>Mass Balance</span></div>
-          </div>
-
-          <div class="accordion-project">
-            <h4>Group Project – Equipment Design for Instant Coffee Powder Production</h4>
-            <ul>
-              <li>Performed a mass balance around the instant coffee powder processing circuit to determine the flows and compositions of key streams in the circuit.</li>
-              <li>Identified process hazards and risks to operating staff.</li>
-              <li>Conducted preliminary sizing and design of key pieces of equipment and estimated energy consumption.</li>
-              <li>Designed and drew process control schemes for each process.</li>
-            </ul>
-            <div class="project-tags"><span>Process Design</span><span>Mass Balance</span><span>Safety</span><span>Control Schemes</span></div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- ── CHEE3020 ── -->
-      <div class="accordion-group scroll-reveal-scale">
-        <button class="accordion-header" aria-expanded="false">
-          <span class="accordion-icon">&#127981;</span>
-          <span class="accordion-title">CHEE3020 – Process Systems Analysis</span>
-          <span class="accordion-chevron">&#9660;</span>
-        </button>
-        <div class="accordion-body">
-
-          <div class="accordion-project">
-            <h4>Bioethanol Production Plant Design</h4>
-            <ul>
-              <li>Contributed to the preliminary design of a bioethanol production facility using sugarcane feedstock.</li>
-              <li>Developed block flow diagrams, process flow diagrams, and mass balances for fermentation and downstream separation units.</li>
-              <li>Designed a process including yeast-recycle fermentation, two-stage distillation, and molecular sieve dehydration to achieve &gt; 99.95% ethanol purity.</li>
-              <li>Evaluated process economics, sustainability, and plant location factors for Australian biofuel production.</li>
-              <li>Assessed operational hazards and environmental considerations for large-scale production.</li>
-            </ul>
-            <div class="project-tags"><span>Bioethanol</span><span>Fermentation</span><span>PFD</span><span>Sustainability</span></div>
-          </div>
-
-          <div class="accordion-project">
-            <h4>Acetic Anhydride Process Synthesis and Simulation</h4>
-            <ul>
-              <li>Designed a continuous process producing 90 kt/year of acetic anhydride via the acetone-ketene route.</li>
-              <li>Built and analyzed an Aspen Plus simulation including reactors, absorption columns, and distillation columns.</li>
-              <li>Performed mass balance, degrees-of-freedom analysis, and recycle stream optimization.</li>
-              <li>Implemented heat integration using heat exchangers to reduce external utility demand.</li>
-              <li>Conducted economic evaluation and sensitivity analysis to assess process viability and cost drivers.</li>
-            </ul>
-            <div class="project-tags"><span>Aspen Plus</span><span>Process Simulation</span><span>Heat Integration</span><span>Economics</span></div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- ── CHEE3007 ── -->
-      <div class="accordion-group scroll-reveal-scale">
-        <button class="accordion-header" aria-expanded="false">
-          <span class="accordion-icon">&#128200;</span>
-          <span class="accordion-title">CHEE3007 – Process Modelling and Control</span>
-          <span class="accordion-chevron">&#9660;</span>
-        </button>
-        <div class="accordion-body">
-
-          <div class="accordion-project">
-            <h4>Heat Exchanger PID Control System Design</h4>
-            <ul>
-              <li>Developed a dynamic model of a shell-and-tube heat exchanger based on mass and energy balances.</li>
-              <li>Conducted open-loop step testing and fitted a first-order plus dead-time (FOPDT) model to experimental data.</li>
-              <li>Estimated model parameters using least-squares optimization in Python.</li>
-              <li>Designed and tuned PID controllers using Internal Model Control (IMC) across aggressive, moderate, and conservative regimes.</li>
-              <li>Implemented anti-reset windup (ARW) and actuator constraints to prevent saturation.</li>
-              <li>Evaluated feedback, feedforward, and cascade control strategies to improve disturbance rejection and set-point tracking.</li>
-            </ul>
-            <figure class="accordion-media">
-              <img src="Images/Feedback%20controller%20regulatory%20step%20test.PNG" alt="Feedback controller regulatory step test plot" loading="lazy" />
-              <figcaption>Feedback controller regulatory step test.</figcaption>
-            </figure>
-            <div class="project-tags"><span>PID Control</span><span>IMC</span><span>Python</span><span>FOPDT</span></div>
-          </div>
-
-          <div class="accordion-project">
-            <h4>Vacuum Evaporator Dynamic Model</h4>
-            <ul>
-              <li>Developed a dynamic mathematical model of a vacuum evaporator tracking liquid height, brine concentration, and temperature.</li>
-              <li>Derived mass, component, and energy balance equations for the evaporator system.</li>
-              <li>Identified key process variables including steam flowrate, vacuum pressure, and feed composition.</li>
-              <li>Analyzed degrees of freedom and model structure for process simulation and control.</li>
-            </ul>
-            <div class="project-tags"><span>Dynamic Modelling</span><span>Evaporation</span><span>Mass Balance</span><span>Energy Balance</span></div>
-          </div>
-
-        </div>
-      </div>
-
       <!-- ── BIOE6028 ── -->
       <div class="accordion-group scroll-reveal-scale">
         <button class="accordion-header" aria-expanded="false">
@@ -434,7 +451,6 @@
   <!-- ===================== CONTACT ===================== -->
   <section class="contact" id="contact">
     <p class="section-label scroll-reveal">GET IN TOUCH</p>
-    <div class="hash-separator hash-separator--center scroll-reveal">////////////////////</div>
     <h2 class="section-heading scroll-reveal">CONTACT ME</h2>
 
     <form class="contact-form scroll-reveal" action="https://formsubmit.co/kierrencheng10@gmail.com" method="POST">
