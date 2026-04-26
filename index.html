@@ -489,23 +489,24 @@
       document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
     });
 
-    // Scroll reveal animation
-    function revealOnScroll() {
-      const reveals = document.querySelectorAll('.scroll-reveal, .scroll-reveal-left, .scroll-reveal-right, .scroll-reveal-scale');
-      
-      reveals.forEach(element => {
-        const windowHeight = window.innerHeight;
-        const elementTop = element.getBoundingClientRect().top;
-        const elementVisible = 150; // Trigger point in pixels from bottom of viewport
-        
-        if (elementTop < windowHeight - elementVisible) {
-          element.classList.add('visible');
+    // Scroll reveal animation using Intersection Observer (more performant)
+    const revealElements = document.querySelectorAll('.scroll-reveal, .scroll-reveal-left, .scroll-reveal-right, .scroll-reveal-scale');
+    
+    const observerOptions = {
+      threshold: 0,
+      rootMargin: '0px 0px -150px 0px'
+    };
+    
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target); // Stop observing once visible
         }
       });
-    }
-
-    window.addEventListener('scroll', revealOnScroll);
-    window.addEventListener('load', revealOnScroll); // Check on page load too
+    }, observerOptions);
+    
+    revealElements.forEach(element => observer.observe(element));
 
     // Typing animation
     const texts = [
