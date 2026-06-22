@@ -454,6 +454,11 @@ a { text-decoration: none; color: inherit; }
   background-size: cover;
   background-position: center;
 }
+.project-img--contain {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
 .project-body {
   padding: 28px;
 }
