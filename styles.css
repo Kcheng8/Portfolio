@@ -489,16 +489,22 @@ a { text-decoration: none; color: inherit; }
   letter-spacing: 0.5px;
 }
 
+/* ================= CONFERENCE VOLUNTEERING ================= */
+.conferences {
+  padding: 100px 48px;
+  background: var(--off-white);
+}
+
 /* ================= WEB DEVELOPMENT PROJECTS ================= */
 .webprojects {
   padding: 100px 48px;
-  background: var(--off-white);
+  background: var(--white);
 }
 
 /* ================= ACADEMIC & RESEARCH PROJECTS ================= */
 .academic {
   padding: 100px 48px;
-  background: var(--white);
+  background: var(--off-white);
 }
 
 .accordion-wrapper {
@@ -647,7 +653,7 @@ a { text-decoration: none; color: inherit; }
 /* ================= CONTACT ================= */
 .contact {
   padding: 100px 48px;
-  background: var(--off-white);
+  background: var(--white);
 }
 .contact-form {
   max-width: 600px;
@@ -707,7 +713,7 @@ a { text-decoration: none; color: inherit; }
   .nav-links.open { display: flex; }
   .nav-toggle { display: flex; }
   .hero-name { font-size: clamp(2.4rem, 10vw, 4rem); }
-  .about, .skills, .projects, .webprojects, .academic, .contact { padding: 72px 24px; }
+  .about, .skills, .projects, .conferences, .webprojects, .academic, .contact { padding: 72px 24px; }
 }
 
 @media (max-width: 600px) {

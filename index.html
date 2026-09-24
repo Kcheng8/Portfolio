@@ -37,6 +37,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
+      <li><a href="#conferences">Conferences</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#academic">Academic</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -86,7 +87,7 @@
         <div class="hash-separator">////////////////////</div>
 
         <p class="about-bold">
-          I am a fifth-year Chemical Engineering (Honours) and Science student at The University of Queensland with a strong foundation in process design, simulation, and equipment sizing. I am experienced in applying mass and energy balances, process modelling, and control systems through academic and research projects. With demonstrated ability to work in multidisciplinary teams, I have a strong interest in engineering consulting across energy, water, and industrial sectors.
+          I am a fifth-year Chemical Engineering (Honours) and Science student at The University of Queensland with a strong foundation in process design, simulation, and equipment sizing. I am experienced in applying mass and energy balances, process modelling, and control systems through academic and research projects, and in applying machine learning to process data. With a demonstrated ability to work in multidisciplinary teams, I enjoy solving complex technical problems and am keen to apply these skills across a broad range of process and technology driven industries.
         </p>
         <p>
           Additionally, I Major in Bioprocess Engineering and Microbiology with interests in bioprocessing and translational science, particularly the application of molecular virology to vaccine and diagnostic development. I am also the Professional Events Officer with the UQ Biotechnology Society, leveraging my technical expertise alongside strong stakeholder engagement and industry networking skills.
@@ -144,22 +145,6 @@
 
     <div class="projects-grid">
       <article class="project-card scroll-reveal-scale">
-        <div class="project-img" style="background-image:url('Images/Ausbiotech.JPG')"></div>
-        <div class="project-body">
-          <h3>Student Ambassador</h3>
-          <p>Selected as one of the student ambassadors for the Ausbiotech International Conference out of 100+ applicants across Australia. Represented the biotechnology student community at Australia's premier industry event.</p>
-          <div class="project-tags"><span>Biotechnology Conference</span></div>
-        </div>
-      </article>
-      <article class="project-card scroll-reveal-scale">
-        <div class="project-img" style="background-image:url('Images/Protein australia conference.jpg')"></div>
-        <div class="project-body">
-          <h3>Volunteer &ndash; Protein Australia Conference</h3>
-          <p>Supported the delivery of a major industry event bringing together researchers, biotechnology professionals and organisations from across Australia's protein science sector. Engaged with experts working in protein production, characterisation and commercialisation while gaining insight into emerging research and industry applications. Through assisting with conference operations and interacting with attendees, strengthened my communication, teamwork and event-coordination skills and broadened my understanding of career pathways within Australia's biotechnology industry.</p>
-          <div class="project-tags"><span>Protein Science</span><span>Event Coordination</span><span>Networking</span></div>
-        </div>
-      </article>
-      <article class="project-card scroll-reveal-scale">
         <div class="project-img" style="background-image:url('Images/Industry Night 2.jpg')"></div>
         <div class="project-body">
           <h3>Professional Events Officer</h3>
@@ -183,6 +168,31 @@
           <div class="project-tags"><span>Synthetic Biology</span><span>Bioprocess Engineering</span><span>ASBC</span></div>
           <a href="https://tacklemission.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">View Website</a>
           <a href="https://www.linkedin.com/company/tacklemission" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">LinkedIn</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== CONFERENCE VOLUNTEERING ===================== -->
+  <section class="conferences" id="conferences">
+    <p class="section-label scroll-reveal">EVENTS &amp; CONFERENCES</p>
+    <h2 class="section-heading scroll-reveal">CONFERENCE VOLUNTEERING</h2>
+
+    <div class="projects-grid">
+      <article class="project-card scroll-reveal-scale">
+        <div class="project-img" style="background-image:url('Images/Ausbiotech.JPG')"></div>
+        <div class="project-body">
+          <h3>Student Ambassador &ndash; AusBiotech International Conference</h3>
+          <p>Selected as one of the student ambassadors for the Ausbiotech International Conference out of 100+ applicants across Australia. Represented the biotechnology student community at Australia's premier industry event.</p>
+          <div class="project-tags"><span>Biotechnology Conference</span></div>
+        </div>
+      </article>
+      <article class="project-card scroll-reveal-scale">
+        <div class="project-img" style="background-image:url('Images/Protein australia conference.jpg')"></div>
+        <div class="project-body">
+          <h3>Volunteer &ndash; Protein Australia Conference</h3>
+          <p>Supported the delivery of a major industry event bringing together researchers, biotechnology professionals and organisations from across Australia's protein science sector. Engaged with experts working in protein production, characterisation and commercialisation while gaining insight into emerging research and industry applications. Through assisting with conference operations and interacting with attendees, strengthened my communication, teamwork and event-coordination skills and broadened my understanding of career pathways within Australia's biotechnology industry.</p>
+          <div class="project-tags"><span>Protein Science</span><span>Event Coordination</span><span>Networking</span></div>
         </div>
       </article>
     </div>
@@ -552,10 +562,23 @@
           <div class="accordion-project">
             <h4>Reactor Safety and Kinetics Analysis</h4>
             <ul>
+              <li>Analysed 5,000 reactor operating points across eight process variables to detect unsafe conditions and predict reaction rate.</li>
               <li>Compared three supervised classifiers for reactor safety detection, selecting the final model on unsafe-class recall rather than overall accuracy.</li>
-              <li>Benchmarked an empirical regression against a physics-based Arrhenius model that matched a 461-term polynomial using two interpretable inputs.</li>
+              <li>Achieved zero false negatives on the held-out test set, correctly flagging all 191 unsafe operating conditions.</li>
+              <li>Benchmarked an empirical regression against a physics-based Arrhenius model that matched a 461-term polynomial using two interpretable inputs, recovering an activation energy of 90 kJ/mol and second-order kinetics.</li>
             </ul>
             <div class="project-tags"><span>Python</span><span>scikit-learn</span><span>pandas</span><span>NumPy</span><span>Matplotlib</span><span>seaborn</span></div>
+          </div>
+
+          <div class="accordion-project">
+            <h4>PCA &amp; Clustering of a Polymerisation Reactor</h4>
+            <ul>
+              <li>Applied unsupervised machine learning to 887 observations of 17 correlated process variables from a methyl methacrylate polymerisation reactor.</li>
+              <li>Standardised the data and used principal component analysis to reduce 17 dimensions to four, capturing 87.3% of the total variance.</li>
+              <li>Interpreted the leading component as a reaction-extent axis and the second as an independent throughput-and-cooling axis.</li>
+              <li>Compared K-Means, Gaussian mixture and DBSCAN clustering on the reduced data, with all three converging on the same four operating regimes: a cold pre-ignition state at two throughputs, and two ignited states separated by cooling duty.</li>
+            </ul>
+            <div class="project-tags"><span>Python</span><span>scikit-learn</span><span>PCA</span><span>Clustering</span><span>Process Data</span></div>
           </div>
 
         </div>
@@ -617,6 +640,7 @@
     // Typing animation
     const texts = [
       'Chemical & Bioprocess Engineering',
+      'Machine Learning',
       'Microbiology',
       'Translational Science',
       'Virology Research',
