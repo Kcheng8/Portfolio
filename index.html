@@ -563,7 +563,7 @@
       <div class="accordion-group scroll-reveal-scale">
         <button class="accordion-header" aria-expanded="false">
           <span class="accordion-icon">&#9888;</span>
-          <span class="accordion-title">CHEE4002 – Process Risk Assessment and Incident Investigation</span>
+          <span class="accordion-title">CHEE4002 – Risk in Process Industries</span>
           <span class="accordion-chevron">&#9660;</span>
         </button>
         <div class="accordion-body">
@@ -618,6 +618,19 @@
               <li>Compared K-Means, Gaussian mixture and DBSCAN clustering on the reduced data, with all three converging on the same four operating regimes: a cold pre-ignition state at two throughputs, and two ignited states separated by cooling duty.</li>
             </ul>
             <div class="project-tags"><span>Python</span><span>scikit-learn</span><span>PCA</span><span>Clustering</span><span>Process Data</span></div>
+          </div>
+
+          <div class="accordion-project">
+            <h4>LSTM-Based Modelling of a Four-Tank System</h4>
+            <ul>
+              <li>Developed a deep learning model to predict the four tank levels of a laboratory quadruple-tank system, a coupled multivariable process in which two pumps feed interacting upper and lower tanks.</li>
+              <li>Performed exploratory analysis on 10,001 samples (2.8 hours at 1 s intervals), using correlation and cross-correlation analysis to identify coupling between tanks and different response timescales: peak lags of 15&ndash;20 s for the upper tanks and 45&ndash;65 s for the lower tanks.</li>
+              <li>Built a two-layer, 64-unit LSTM in PyTorch (51,972 parameters), with a chronological train/validation/test split, training-only scaling to prevent data leakage, and early stopping on validation loss.</li>
+              <li>Selected a 40 s input window by comparing 20, 40 and 60 s windows on validation loss, linking the modelling choice back to the system dynamics found in the analysis.</li>
+              <li>Achieved one-step-ahead test errors of 0.29&ndash;1.20% NRMSE across the four tanks.</li>
+              <li>Benchmarked the model against a persistence (&ldquo;last value&rdquo;) forecast, which performed better for three of the four tanks. I reported this openly as a limitation of short-horizon evaluation rather than overstating the model.</li>
+            </ul>
+            <div class="project-tags"><span>Deep Learning</span><span>LSTM</span><span>PyTorch</span><span>Time-Series</span><span>Process Dynamics</span></div>
           </div>
 
         </div>
