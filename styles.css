@@ -412,6 +412,12 @@ a { text-decoration: none; color: inherit; }
   margin-bottom: 16px;
   color: var(--dusty-lavender);
 }
+.skill-icon img {
+  height: 2.5rem;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
 .skill-card h3 {
   font-size: 1.1rem;
   text-transform: uppercase;
